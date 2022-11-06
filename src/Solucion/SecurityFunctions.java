@@ -1,4 +1,4 @@
-package seguridad20222_servidor;
+package Solucion;
 
 import java.io.File;
 import java.io.FileInputStream;
