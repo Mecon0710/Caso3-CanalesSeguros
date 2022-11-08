@@ -81,7 +81,7 @@ public class SrvThread extends Thread{
     		ac.println(g.toString());
     		ac.println(p.toString());
     		ac.println(str_valor_comun);
-    		
+    		/* 
     		if (mod==0) {
     			exito = opt0(str_valor_comun, ac, dc);
     		} else if (mod==1){
@@ -89,6 +89,8 @@ public class SrvThread extends Thread{
     		} else if (mod==2) {
     			exito = opt2( str_valor_comun, ac, dc, bix, privadaServidor);
 			}
+			*/
+			exito = opt2( str_valor_comun, ac, dc, bix, privadaServidor);
 	        if (exito)
 	        	System.out.println(dlg + "Finishing test: passed.");		
 	        else
@@ -173,7 +175,7 @@ public class SrvThread extends Thread{
 
 	    	if (verificar) {
 	    		System.out.println("==========> Test 1b: passed (Client sends matching query and MAC).");
-				
+
 	        	String str_original = new String(descifrado, StandardCharsets.UTF_8);
 	        	int valor = Integer.parseInt(str_original) + 1;
 	    		System.out.println(dlg + "Query answer:" + valor);
